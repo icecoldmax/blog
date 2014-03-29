@@ -5,7 +5,7 @@ Time.zone = "Australia/Sydney"
 activate :syntax, line_numbers: true
 
 activate :blog do |blog|
-  blog.permalink = ":title"
+  blog.permalink = "/blog/:title"
   blog.sources = "/posts/:year-:month-:day-:title.html"
 end
 
