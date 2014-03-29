@@ -9,14 +9,10 @@
     %link{:href => "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", :rel => "stylesheet"}
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed", title: "Atom Feed"
 
-    %script(type="text/javascript" src="//use.typekit.net/txy8qyw.js")
-    :javascript
-      try{Typekit.load();}catch(e){}
-
 %body
   .container
     %header
-      %a{href: "/"}
+      %a{href: "/blog"}
         %h1 Ice Cold Max
       %h4 Oh yeah.
     %hr
