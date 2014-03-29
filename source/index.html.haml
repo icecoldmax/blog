@@ -1,0 +1,6 @@
+.posts
+  - blog.articles.each do |article|
+    .col-xs-10.col-md-10.post
+      .time= article.date.strftime("%b %e, %Y")
+      %a{:href => article.url }
+        %h2= article.title
