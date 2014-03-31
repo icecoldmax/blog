@@ -2,5 +2,5 @@
   - blog.articles.each do |article|
     .col-xs-10.col-md-10.post
       .time= article.date.strftime("%b %e, %Y")
-      %a{:href => "/blog/#{article.slug}" }
+      = link_to article.url do
         %h2= article.title
