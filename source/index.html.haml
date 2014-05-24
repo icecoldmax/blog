@@ -1,6 +1,12 @@
+#first-post
+  = render :partial, "_post", locals: { article: blog.articles.first }
+
 .posts
-  - blog.articles.each do |article|
-    .col-xs-10.col-md-10.post
-      .time= article.date.strftime("%b %e, %Y")
-      = link_to article.url do
-        %h2= article.title
+  - blog.articles.each_with_index do |article, index|
+    - unless index == 0
+      .row.post-row
+        .col-xs-2
+        .col-xs-8.post
+          = link_to article.url do
+            %h3.title= article.title
+          .time= article.date.strftime("%b %e, %Y")

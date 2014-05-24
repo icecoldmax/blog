@@ -11,3 +11,4 @@ gem "pry-byebug"
 
 gem "bootstrap-sass"
 gem "modernizr"
+gem "jquery-middleman"

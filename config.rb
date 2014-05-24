@@ -24,7 +24,7 @@ page "posts/*", layout: :post
 
 set :haml, format: :html5
 set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, smartypants: true, footnotes: true, autolink: true
+set :markdown, fenced_code_blocks: true, smartypants: true, footnotes: true, autolink: true, strikethrough: true
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'

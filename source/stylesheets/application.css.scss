@@ -1,118 +1,103 @@
 @import "bootstrap";
+$post-row-base: #7D6FAD;
 
 body {
-  h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  padding-top: 90px;
 
-  h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-style: normal;
+  & > .container {
+    width: 100%;
   }
 
   a:hover {
     text-decoration: none;
   }
 
-  .container {
-    min-height: 400px;
-    max-width: 750px;
+  .navbar {
+    background-color: #ededed;
+  }
 
-    header {
-      height: 100px;
-      margin-top: 20px;
-      text-align: center;
+  h1 {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 
-      h1 {
-        font-size: 40px;
-      }
-    }
+  #content {
+    line-height: 22px;
+  }
 
-    .posts {
+  .posts {
+    .post-row {
+      background-color: $post-row-base;
+      padding-bottom: 10px;
       .post {
-        margin-top: 15px;
+        text-align: center;
 
-        .time {
-          color: grey;
-          font-size: 14px;
+        .title, .time {
+          color: #ececec;;
         }
 
-        h2 {
-          margin: 0px;
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 20px;
+        .title {
+          font-weight: 100;
+        }
+
+        .time {
+          font-size: 11px;
         }
       }
     }
+  }
 
-    .post {
-      .header {
-        margin-bottom: 40px;
+  footer {
+    height: 200px;
+    line-height: 1px;
+    margin-top: -9px;
 
-        .time {
-          color: grey;
-          font-size: 14px;
-          margin-bottom: 10px;
-        }
-
-        h1 {
-          font-size: 40px;
-          font-style: normal;
-          font-weight: 800;
-          line-height: 1;
-        }
+    #faceshot {
+      margin-top: 8px;
+      width: 85px;
+      img {
+        border-radius: 50%;
       }
+    }
 
-      .text, code {
-        font-size: 18px;
-        font-family: "source-sans-pro";
-        line-height: 1.5em;
+    #name-and-description {
+    }
 
-        code {
+    .social {
+      a {
+        color: black;
+
+        &.space {
+          margin-left: 5px;
+        }
+
+        &:hover {
           color: #008080;
         }
-
-        h2 {
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 30px;
-          font-style: normal;
-          font-weight: 800;
-          margin-top: 30px;
-        }
-
-        pre.highlight {
-          margin-top: 30px;
-          margin-bottom: 30px;
-          white-space: pre;
-          word-break: inherit;
-          word-wrap: inherit;
-          overflow-x: auto;
-        }
-
-        img {
-          @extend .img-responsive
-        }
       }
     }
+  }
 
-    footer {
-      height: 200px;
+  #first-post {
+    margin-bottom: 15px;
+  }
 
-      .social {
-        a {
-          color: black;
+  #first-post, .post {
+    .row {
+      &.header {
+        text-align: center;
+      }
 
-          &.space {
-            margin-left: 5px;
-          }
+      &.body {
+        margin: 30px auto 20px auto;
+      }
 
-          &:hover {
-            color: #008080;
-          }
-        }
+      &.posted-time {
+        margin: 20px auto 40px auto;
+        font-style: italic;
+        color: darkgray;
       }
     }
   }
