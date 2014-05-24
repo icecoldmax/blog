@@ -1,0 +1,1 @@
+(function(){var t,c;c=$(".post-row"),t=1,c.each(function(){return $(this).css({opacity:""+t}),t-=.1})}).call(this);
